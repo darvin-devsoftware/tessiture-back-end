@@ -1,8 +1,5 @@
-Aquí tienes el **README.md exactamente en formato Markdown (.md)** listo para copiar y pegar en tu archivo `README.md` del proyecto **Tessiture**.
 
----
-
-# ✅ **README.md (Formato Markdown completo y limpio)**
+# ✅ **README.md Tessiture**
 
 ```md
 # **TESSITURE — Podcast CMS Backend**
