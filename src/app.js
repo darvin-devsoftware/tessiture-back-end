@@ -25,6 +25,8 @@ const app = express();
 const applyRoutes = require("./Routes");
 const errorHandler = require("./Middleware/errorHandler");
 
+const cors = require('cors');
+
 /**
  * ---------------------------------------------------------
  * Global Middleware
@@ -39,6 +41,8 @@ const errorHandler = require("./Middleware/errorHandler");
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
+
+app.use(cors("*"))
 /**
  * ---------------------------------------------------------
  * API Route Registration
@@ -60,5 +64,8 @@ applyRoutes(app);
  *   - Controller/service/repository errors
  */
 app.use(errorHandler);
+
+
+
 
 module.exports = app;

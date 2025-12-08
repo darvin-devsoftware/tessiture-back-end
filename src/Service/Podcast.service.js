@@ -1,4 +1,4 @@
-const cloudinary = require("../Config/cloudinary");
+const cloudinary = require("./../cloudinary");
 
 /**
  * Service layer responsible for all business logic related to Podcasts.

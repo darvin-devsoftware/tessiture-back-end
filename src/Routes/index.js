@@ -33,6 +33,7 @@ const LogsRoutes = require("./Logs.route");
 const AuthorRoutes = require("./Author.route");
 const PodcastRoutes = require("./Podcast.route");
 const BookRoutes = require("./Book.route");
+const AuthRoutes = require('./Auth.route');
 
 /**
  * Registers all route modules under the /api/v1 namespace.
@@ -49,8 +50,9 @@ const applyRoutes = (app) => {
     app.use("/api/v1/authors", AuthorRoutes);
     app.use("/api/v1/podcasts", PodcastRoutes);
     app.use("/api/v1/books", BookRoutes);
+    app.use('/api/v1/auth', AuthRoutes);
 
-    // test
+
 };
 
 module.exports = applyRoutes;

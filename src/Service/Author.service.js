@@ -1,4 +1,4 @@
-const cloudinary = require("../Config/cloudinary");
+const cloudinary = require("./../cloudinary");
 
 /**
  * Service layer responsible for managing business logic related to Authors.
